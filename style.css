@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+#card{
+    height: 450px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid black;
+    position: relative;
+}
+
+#storiyaan{
+    height: 120px;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #555;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#storiyaan::-webkit-scrollbar {
+    width: 0.4em; /* Adjust the scrollbar width as needed */
+}
+
+#storiyaan::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the thumb color to transparent */
+}
+
+#storiyaan::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the track color to transparent */
+}
+
+#storiyaan::-webkit-scrollbar-thumb:hover {
+    background-color: transparent; /* Set the thumb color to transparent on hover */
+}
+
+#storiyaan::-webkit-scrollbar-thumb:active {
+    background-color: transparent; /* Set the thumb color to transparent when active (clicked) */
+}
+
+.story{
+    border: 3px solid red;
+    height: 90px;
+    border-radius: 50%;
+    width: 90px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    display: none;
+}
